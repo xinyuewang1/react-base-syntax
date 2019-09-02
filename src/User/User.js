@@ -1,5 +1,6 @@
 import React from "react";
 
+// It would be a good practice to put these two in separate folders.
 const userInput = props => {
   return <input type="text" onChange={props.changed} value={props.name} />;
 };

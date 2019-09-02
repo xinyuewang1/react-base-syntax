@@ -23,7 +23,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 style={style}>Hey, what's your name?</h1>
-        <UserInput changed={this.nameChangeHandler} />
+        <UserInput
+          changed={this.nameChangeHandler}
+          name={this.state.person[0].name}
+        />
         <UserOutput name={this.state.person[0].name} />
         {/* <UserInput changed={this.nameChangeHandler} /> */}
         <UserOutput name={this.state.person[1].name} />
